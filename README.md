@@ -10,4 +10,6 @@ Go to WooCommerce PDF Invoices / General -> choose template
 
 chrome_b7mdv0wFKI.jpg
 
-[alt text](https://github.com/As-Tomas/WooCommerce-PDF-Invoice-template-extended-table/blob/master/PDF_example.jpg "Logo Title Text 1")
+<p align="center">
+<img src="https://github.com/As-Tomas/WooCommerce-PDF-Invoice-template-extended-table/blob/master/PDF_example.jpg" width="100" height="100" border="10"/>
+</p>
