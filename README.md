@@ -8,4 +8,4 @@ Original files you always find in wp-content/plugins/woocommerce-pdf-invoices-pa
 
 Go to WooCommerce PDF Invoices / General -> choose template
 
-<img src="https://github.com/As-Tomas/WooCommerce-PDF-Invoice-template-extended-table/blob/master/PDF_example.jpg" width="420" height="760" border="10"/>
+<img src="https://github.com/As-Tomas/WooCommerce-PDF-Invoice-template-extended-table/blob/master/PDF_example.jpg" />
