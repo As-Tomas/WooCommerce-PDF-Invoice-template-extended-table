@@ -121,21 +121,19 @@
 				</td>
 				<td class="quantity"><?php echo $item['quantity']; ?></td>
 
-				<td class="price-with-tax"><?php echo round((($item['item']['subtotal'] / 100) * 21) + $item['item']['subtotal'], 2); echo " €" ; ?></td>
+				<td class="price-with-tax"><?php echo number_format((($item['item']['subtotal'] / 100) * 21) + $item['item']['subtotal'], 2); echo " €" ; ?></td>
 				
-				<td class="price-before-tax"><?php echo round($item['item']['subtotal'], 2); echo " €" ;  ?></td>
+				<td class="price-before-tax"><?php echo number_format($item['item']['subtotal'], 2); echo " €" ;  ?></td>
 
-				<td class="discount"><?php echo  round($item['item']['line_subtotal'] - $item['item']['line_total'],2); echo " €"; ?></td>	
+				<td class="discount"><?php echo  number_format($item['item']['line_subtotal'] - $item['item']['line_total'],2); echo " €"; ?></td>	
 
-				<td class="total-before-tax"><?php echo round( $item['item']['total'], 2); echo " €"; ?></td>
+				<td class="total-before-tax"><?php echo number_format( $item['item']['total'], 2); echo " €"; ?></td>
 
 				<td class="tax"><?php echo $item['tax_rates']; ?></td>
 
-				<td class="total_tax"><?php	echo round($item['item']['total_tax'] * $item['quantity'], 2); 
-				echo " €";
-				//var_dump($item['item']['taxes']['subtotal']);
-				?></td>
-				<td class="total-eur"><?php echo round($item['item']['total_tax'] * $item['quantity'] + $item['item']['total'], 2); echo " €"; ?></td>
+				<td class="total_tax"><?php	echo number_format($item['item']['total_tax'] * $item['quantity'], 2); echo " €";?></td>
+				
+				<td class="total-eur"><?php echo number_format($item['item']['total_tax'] * $item['quantity'] + $item['item']['total'], 2); echo " €"; ?></td>
 			</tr>
 		<?php endforeach; ?>
 	</tbody>
@@ -166,11 +164,7 @@
 						<?php foreach ( $this->get_woocommerce_totals() as $key => $total ) : ?>
 							<tr class="<?php echo $key; ?>">
 								<th class="description"><?php echo $total['label'];	?></th>
-								<td class="price"><span class="totals-price"><?php echo $total['value']; 
-								
-								//var_dump($total);
-								
-								?></span></td>
+								<td class="price"><span class="totals-price"><?php echo $total['value']; ?></span></td>
 							</tr>
 						<?php endforeach; ?>
 					</tfoot>
