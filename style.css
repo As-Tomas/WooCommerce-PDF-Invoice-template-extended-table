@@ -155,7 +155,10 @@ table.order-details {
 	page-break-before: avoid;
 }
 
-.quantity,
+.product{
+	width: 30%;
+}
+
 .price {
 	width: 20%;
 }
@@ -240,7 +243,8 @@ dd:after {
 table.totals {
 	width: 100%;
 	margin-top: 5mm;
-	table-layout: fixed;
+	table-layout: auto;
+	
 }
 
 table.totals th,

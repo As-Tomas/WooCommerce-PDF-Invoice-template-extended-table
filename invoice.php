@@ -95,7 +95,9 @@
 		<tr>
 			<th class="product"><?php _e( 'Product', 'woocommerce-pdf-invoices-packing-slips' ); ?></th>
 			<th class="quantity"><?php _e( 'Quantity', 'woocommerce-pdf-invoices-packing-slips' ); ?></th>
-			<th class="price-before-tax"><?php _e( 'Kaina be PVM', 'woocommerce-pdf-invoices-packing-slips' ); ?></th>			
+			<th class="price-with-tax"><?php _e( 'Kaina su PVM', 'woocommerce-pdf-invoices-packing-slips' ); ?></th>
+			<th class="price-before-tax"><?php _e( 'Kaina be PVM', 'woocommerce-pdf-invoices-packing-slips' ); ?></th>
+			<th class="discount"><?php _e( 'Nuolaida', 'woocommerce-pdf-invoices-packing-slips' ); ?></th>			
 			<th class="total-before-tax"><?php _e( 'Suma be PVM', 'woocommerce-pdf-invoices-packing-slips' ); ?></th>
 			<th class="tax"><?php _e( 'PVM tarifas', 'woocommerce-pdf-invoices-packing-slips' ); ?></th>
 			<th class="total_tax"><?php _e( 'PVM Suma', 'woocommerce-pdf-invoices-packing-slips' ); ?></th>
@@ -118,14 +120,22 @@
 					<?php do_action( 'wpo_wcpdf_after_item_meta', $this->get_type(), $item, $this->order  ); ?>
 				</td>
 				<td class="quantity"><?php echo $item['quantity']; ?></td>
-				<td class="price-before-tax"><?php echo $item['ex_single_price'];?></td>				
-				<td class="total-before-tax"><?php echo $item['line_total']; ?></td>
+
+				<td class="price-with-tax"><?php echo round((($item['item']['subtotal'] / 100) * 21) + $item['item']['subtotal'], 2); echo " €" ; ?></td>
+				
+				<td class="price-before-tax"><?php echo round($item['item']['subtotal'], 2); echo " €" ;  ?></td>
+
+				<td class="discount"><?php echo  round($item['item']['line_subtotal'] - $item['item']['line_total'],2); echo " €"; ?></td>	
+
+				<td class="total-before-tax"><?php echo round( $item['item']['total'], 2); echo " €"; ?></td>
+
 				<td class="tax"><?php echo $item['tax_rates']; ?></td>
-				<td class="total_tax"><?php	echo  $item['item']['total_tax'] * $item['quantity']; 
+
+				<td class="total_tax"><?php	echo round($item['item']['total_tax'] * $item['quantity'], 2); 
 				echo " €";
 				//var_dump($item['item']['taxes']['subtotal']);
 				?></td>
-				<td class="total-eur"><?php echo $item['order_price']; ?></td>
+				<td class="total-eur"><?php echo round($item['item']['total_tax'] * $item['quantity'] + $item['item']['total'], 2); echo " €"; ?></td>
 			</tr>
 		<?php endforeach; ?>
 	</tbody>
@@ -150,7 +160,7 @@
 				</div>				
 			</td>
 			
-			<td class="no-borders" colspan="6">
+			<td class="no-borders" colspan="8">
 				<table class="totals">
 					<tfoot>
 						<?php foreach ( $this->get_woocommerce_totals() as $key => $total ) : ?>
