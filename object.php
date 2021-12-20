@@ -1,46 +1,106 @@
-array(25) { ["item_id"]=> int(139) ["product_id"]=> int(1589) ["variation_id"]=>
-int(2738) ["name"]=> string(26) "Madingiausi aulinukai - 37" ["quantity"]=>
-int(1) ["line_total"]=> string(135) "80,08 €" ["single_line_total"]=> string(135) "
-80,08 €" ["line_tax"]=> string(135) "16,82 €" ["single_line_tax"]=> string(135) "
-16,82 €" ["tax_rates"]=> string(4) "21 %" ["calculated_tax_rates"]=> string(4)
-"21 %" ["line_subtotal"]=> string(135) "94,21 €" ["line_subtotal_tax"]=>
-string(135) "19,79 €" ["ex_price"]=> string(135) "94,21 €" ["price"]=>
-string(136) "114,00 €" ["order_price"]=> string(136) "114,00 €"
-["ex_single_price"]=> string(135) "94,21 €" ["single_price"]=> string(136) "
-114,00 €" 
-["item"]=> object(WC_Order_Item_Product)#17523 (11) {
-["extra_data":protected]=> array(9) { ["product_id"]=> int(0) ["variation_id"]=>
-int(0) ["quantity"]=> int(1) ["tax_class"]=> string(0) "" ["subtotal"]=> int(0)
-["subtotal_tax"]=> int(0) ["total"]=> int(0) ["total_tax"]=> int(0) ["taxes"]=>
-array(2) { ["subtotal"]=> array(0) { } ["total"]=> array(0) { } } }
-["data":protected]=> array(11) { ["order_id"]=> int(2942) ["name"]=>string(26)
-"Madingiausi aulinukai - 37" ["product_id"]=> int(1589)["variation_id"]=>
-int(2738) ["quantity"]=> int(1) ["tax_class"]=> string(0) ""["subtotal"]=>string(9)
-"94.214876" ["subtotal_tax"]=> string(5) "19.79"["total"]=> string(9)
-"80.082645" ["total_tax"]=> string(5) "16.82" ["taxes"]=>array(2) { ["total"]=>
-array(1) { [1]=> string(5) "16.82" } ["subtotal"]=> array(1){ [1]=> string(5)
-"19.79" } } } ["cache_group":protected]=> string(11) "order-items"
-["meta_type":protected]=> string(10) "order_item"
-["object_type":protected]=> string(10) "order_item" ["id":protected]=>int(139)
-["changes":protected]=> array(0) { } ["object_read":protected]=>bool(true)
-["default_data":protected]=> array(11) { ["order_id"]=> int(0)["name"]=>
-string(0) "" ["product_id"]=> int(0) ["variation_id"]=> int(0)["quantity"]=> int(1)
-["tax_class"]=> string(0) "" ["subtotal"]=> int(0)["subtotal_tax"]=> int(0)
-["total"]=> int(0) ["total_tax"]=> int(0) ["taxes"]=>array(2) { ["subtotal"]=>
-array(0) { } ["total"]=> array(0) { } } }["data_store":protected]=>
-object(WC_Data_Store)#17524 (4) {["instance":"WC_Data_Store":private]=>
-object(WC_Order_Item_Product_Data_Store)#17525 (4) {
-["internal_meta_keys":protected]=> array(20) { [0]=> string(9) "_order_id"
-[1]=> string(5) "_name" [2]=> string(11) "_product_id" [3]=> string(13)
-"_variation_id" [4]=> string(9) "_quantity" [5]=> string(10) "_tax_class" [6]=>
-string(9) "_subtotal" [7]=> string(13) "_subtotal_tax" [8]=> string(6) "_total"
-[9]=> string(10) "_total_tax" [10]=> string(6) "_taxes" [11]=> string(11)
-"_product_id" [12]=> string(13) "_variation_id" [13]=> string(4) "_qty" [14]=>
-string(10) "_tax_class" [15]=> string(14) "_line_subtotal" [16]=> string(18)
-"_line_subtotal_tax" [17]=> string(11) "_line_total" [18]=> string(9) "_line_tax"
-[19]=> string(14) "_line_tax_data" } ["meta_type":protected]=> string(10)
-"order_item" ["object_id_field_for_meta":protected]=> string(13)
-"order_item_id" ["must_exist_meta_keys":protected]=> array(0) { } }
+array(25) { 
+    ["item_id"]=> int(139) 
+    ["product_id"]=> int(1589) 
+    ["variation_id"]=> int(2738) 
+    ["name"]=> string(26) "Name of product" 
+    ["quantity"]=> int(1) 
+    ["line_total"]=> string(135) "80,08 €" 
+    ["single_line_total"]=> string(135) "80,08 €" 
+    ["line_tax"]=> string(135) "16,82 €" 
+    ["single_line_tax"]=> string(135) "16,82 €" 
+    ["tax_rates"]=> string(4) "21 %" 
+    ["calculated_tax_rates"]=> string(4) "21 %" 
+    ["line_subtotal"]=> string(135) "94,21 €" 
+    ["line_subtotal_tax"]=> string(135) "19,79 €" 
+    ["ex_price"]=> string(135) "94,21 €" 
+    ["price"]=> string(136) "114,00 €" 
+    ["order_price"]=> string(136) "114,00 €"
+    ["ex_single_price"]=> string(135) "94,21 €" 
+    ["single_price"]=> string(136) "114,00 €" 
+
+    ["item"]=> object(WC_Order_Item_Product)#17523 (11) {
+        ["extra_data":protected]=> array(9) { 
+            ["product_id"]=> int(0) 
+            ["variation_id"]=> int(0) 
+            ["quantity"]=> int(1) 
+            ["tax_class"]=> string(0) "" 
+            ["subtotal"]=> int(0)
+            ["subtotal_tax"]=> int(0) 
+            ["total"]=> int(0) 
+            ["total_tax"]=> int(0) 
+            ["taxes"]=>
+                array(2) { 
+                    ["subtotal"]=> array(0) { } 
+                    ["total"]=> array(0) { } } 
+            }
+        ["data":protected]=> array(11) { 
+            ["order_id"]=> int(2942) 
+            ["name"]=>string(26) "Name of product" 
+            ["product_id"]=> int(1589)["variation_id"]=> int(2738) 
+            ["quantity"]=> int(1) 
+            ["tax_class"]=> string(0) ""
+            ["subtotal"]=>string(9) "73.553719" 
+            ["subtotal_tax"]=> string(5) "15.45"
+            ["total"]=> string(9) "66.198347" 
+            ["total_tax"]=> string(5) "13.9" 
+            ["taxes"]=>array(2) { 
+                ["total"]=> array(1) { 
+                    [1]=> string(5) "13.9" } 
+                ["subtotal"]=> array(1){ 
+                    [1]=> string(5) "15.45" } 
+                } 
+            } 
+        ["cache_group":protected]=> string(11) "order-items"
+        ["meta_type":protected]=> string(10) "order_item"
+        ["object_type":protected]=> string(10) "order_item" 
+        ["id":protected]=>int(139)
+        ["changes":protected]=> array(0) { } 
+        ["object_read":protected]=>bool(true)
+        ["default_data":protected]=> array(11) { 
+            ["order_id"]=> int(0)
+            ["name"]=> string(0) "" 
+            ["product_id"]=> int(0) 
+            ["variation_id"]=> int(0)
+            ["quantity"]=> int(1)
+            ["tax_class"]=> string(0) "" 
+            ["subtotal"]=> int(0)
+            ["subtotal_tax"]=> int(0)
+            ["total"]=> int(0) 
+            ["total_tax"]=> int(0) 
+            ["taxes"]=>array(2) { 
+                ["subtotal"]=> array(0) { } 
+                ["total"]=> array(0) { } 
+                } 
+            }
+        ["data_store":protected]=> object(WC_Data_Store)#17524 (4) {
+            ["instance":"WC_Data_Store":private]=> object(WC_Order_Item_Product_Data_Store)#17525 (4) {
+                ["internal_meta_keys":protected]=> array(20) { 
+                    [0]=> string(9) "_order_id"
+                    [1]=> string(5) "_name" 
+                    [2]=> string(11) "_product_id" 
+                    [3]=> string(13) "_variation_id" 
+                    [4]=> string(9) "_quantity" 
+                    [5]=> string(10) "_tax_class" 
+                    [6]=> string(9) "_subtotal" 
+                    [7]=> string(13) "_subtotal_tax" 
+                    [8]=> string(6) "_total" 
+                    [9]=> string(10) "_total_tax" 
+                    [10]=> string(6) "_taxes" 
+                    [11]=> string(11) "_product_id" 
+                    [12]=> string(13) "_variation_id" 
+                    [13]=> string(4) "_qty" 
+                    [14]=> string(10) "_tax_class" 
+                    [15]=> string(14) "_line_subtotal" 
+                    [16]=> string(18) "_line_subtotal_tax" 
+                    [17]=> string(11) "_line_total" 
+                    [18]=> string(9) "_line_tax"
+                    [19]=> string(14) "_line_tax_data" 
+                    } 
+            ["meta_type":protected]=> string(10) "order_item" 
+            ["object_id_field_for_meta":protected]=> string(13) "order_item_id" 
+            ["must_exist_meta_keys":protected]=> array(0) { } 
+            }
+
 ["stores":"WC_Data_Store":private]=> array(40) { ["coupon"]=> string(24)
 "WC_Coupon_Data_Store_CPT" ["customer"]=> string(22)
 "WC_Customer_Data_Store" ["customer-download"]=> string(31)
@@ -58,25 +118,6 @@ string(23) "WC_Order_Data_Store_CPT" ["order-refund"]=> string(30)
 "WC_Product_Data_Store_CPT" ["product-grouped"]=> string(33)
 "WC_Product_Grouped_Data_Store_CPT" ["product-variable"]=> string(34)
 "WC_Product_Variable_Data_Store_CPT" ["product-variation"]=> string(35)
-
-$b .= $item['single_line_tax'];
-				//$as = "16.82 €";
-				//echo strlen($as ); // rezultatas 9
-				$a = str_replace("€", " ", $b); //pirma kart bandau
-				$a = rtrim($a,"€");				//antra kart bandau kitaip
-				$a = str_replace(",", ".", $a); //sitas suveikia
-				//var_dump($a);					//pirmas dumpas
-				$var = (double)filter_var($a, FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION);
-
-				$c = preg_replace('#^([-]*[0-9\.,\' ]+?)((\.|,){1}([0-9-]{1,3}))*$#e', "str_replace(array('€','.', ',', \"'\", ' '), '', '\\1') . '.\\4'", $a);
-				var_dump($c);					//antras dumpas
-
-				//var_dump($item['item']);
-				var_dump($item['item']['total_tax']);
-				
-				echo  $item['item']['total_tax'] * 1; 
-
-                //line_subtotal_tax
 
 
 
